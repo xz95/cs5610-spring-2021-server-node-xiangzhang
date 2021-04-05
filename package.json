@@ -1,0 +1,19 @@
+{
+  "name": "cs5610-spring-2021-server-node-xiangzhang",
+  "version": "1.0.0",
+  "description": "Node server for Whiteboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xz95/cs5610-spring-2021-server-node-xiangzhang.git"
+  },
+  "author": "Xiang Zhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xz95/cs5610-spring-2021-server-node-xiangzhang/issues"
+  },
+  "homepage": "https://github.com/xz95/cs5610-spring-2021-server-node-xiangzhang#readme"
+}
