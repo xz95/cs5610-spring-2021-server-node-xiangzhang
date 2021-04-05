@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/xz95/cs5610-spring-2021-server-node-xiangzhang/issues"
   },
-  "homepage": "https://github.com/xz95/cs5610-spring-2021-server-node-xiangzhang#readme"
+  "homepage": "https://github.com/xz95/cs5610-spring-2021-server-node-xiangzhang#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
