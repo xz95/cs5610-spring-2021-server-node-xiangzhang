@@ -1,5 +1,5 @@
 const questionService
-    = require("../services/questions-service")
+    = require("../services/questions/questions-service")
 
 module.exports = (app) => {
   const findQuestionsForQuiz = (req, res) => {
@@ -9,6 +9,14 @@ module.exports = (app) => {
     res.json(questions)
   }
 
+  const findAllQuestions = (req, res) => {
+    const questions = questionService.findAllQuestions()
+    res.send(questions)
+  }
+
   app.get("/api/quizzes/:qid/questions",
       findQuestionsForQuiz)
+
+  app.get("/api/questions",
+      findAllQuestions)
 }

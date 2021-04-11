@@ -1,5 +1,5 @@
 // require service
-const quizService = require('../services/quiz-service')
+const quizService = require('../services/quizzes/quiz-service')
 
 // accept app, express instance
 module.exports = (app) => {
