@@ -1,12 +1,23 @@
 
-let quizzes = require('./quizzes.json') // quizzes declared in separate file
+//const quizzes = require('./quizzes.json') // quizzes declared in separate file
+
+const quizzesModel = require("../../models/quizzes/quizzes-model")
 
 const creatQuiz = () => {}
 
-const findAllQuizzes = () => quizzes // retrieve all quizzes
+const findAllQuizzes = () => {
+  // return quizzes
+  return quizzesModel.find()
+} // retrieve all quizzes
 
 const findQuizById = (quizId) => // retrieve specific quiz by its ID
-    quizzes.find(quiz => quiz._id === quizId)
+    // quizzes.find(quiz => quiz._id === quizId)
+{
+  return quizzesModel
+          .findById(quizId)
+          .populate("questions")
+          .exec()
+}
 
 const updateQuiz = () => {}
 

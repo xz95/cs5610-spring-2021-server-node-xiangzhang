@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/xz95/cs5610-spring-2021-server-node-xiangzhang#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.12.4"
   }
 }
