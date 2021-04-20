@@ -6,7 +6,7 @@ const uri = process.env.MONGODB_URI;
 app.use(bodyParser.json())
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/whiteboard',
+mongoose.connect(uri,
     {useNewUrlParser: true, useUnifiedTopology: true});
 
 
