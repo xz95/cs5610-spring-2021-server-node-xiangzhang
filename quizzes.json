@@ -1,0 +1,1 @@
+[{"questions":["678"],"_id":"123","title":"Quiz 1","courseId":"ABC123"},{"questions":["123","234","345"],"_id":"234","title":"Quiz 2","courseId":"ABC234"},{"questions":["456","567"],"_id":"345","title":"Quiz 3","courseId":"ABC234"},{"questions":[],"_id":"456","title":"Quiz 4","courseId":"ABC345"}]
