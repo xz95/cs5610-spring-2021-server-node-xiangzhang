@@ -5,6 +5,7 @@ const questionsSchema = mongoose.Schema({
   question: String,
   correct: String,
   answer: String,
+  quizId: String,
   type: {type: String, enum: ['TRUE_FALSE', 'MULTIPLE_CHOICE', 'FILL_BLANKS']},
   choices: [String]
 }, {collection: "questions"})

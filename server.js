@@ -1,5 +1,8 @@
 const express = require('express') // avoid using ./express;
+const bodyParser = require('body-parser');
 const app = express()
+
+app.use(bodyParser.json())
 
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/whiteboard',
