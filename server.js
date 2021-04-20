@@ -1,6 +1,7 @@
 const express = require('express') // avoid using ./express;
 const bodyParser = require('body-parser');
 const app = express()
+const uri = process.env.MONGODB_URI;
 
 app.use(bodyParser.json())
 
