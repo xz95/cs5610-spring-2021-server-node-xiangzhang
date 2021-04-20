@@ -6,8 +6,17 @@ const scoreQuiz = (questions) => {
       numberOfCorrectQuestions++ : numberOfCorrectQuestions)
   return 100 * numberOfCorrectQuestions / questions.length }
 
-const findAttemptsForQuiz = (qzid) => quizAttemptsModel.find({quiz: qzid}).populate('quiz', 'title _id')
-const createAttempt = (qid, attempt) =>
-    quizAttemptsModel.create({ quiz: qid, answers: attempt, score: scoreQuiz(attempt) })
+const findAttemptsForQuiz = (qzid) => {
+  return quizAttemptsModel.find({quiz: qzid})
+              .populate('quiz', 'title _id')
+
+}
+
+
+const createAttempt = (qid, attempt) => {
+  return quizAttemptsModel
+  .create({ quiz: qid, answers: attempt, score: scoreQuiz(attempt) })
+}
+
 
 module.exports = { createAttempt, findAttemptsForQuiz }
