@@ -8,13 +8,13 @@ app.use(bodyParser.json())
 const mongoose = require('mongoose');
 
 // for remote mongodb Atlas
-// mongoose.connect("mongodb+srv://xiang:zhang@whiteboard-a8.bd3rw.mongodb.net/whiteboard?retryWrites=true&w=majority",
-//     {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect("mongodb+srv://xiang:zhang@whiteboard-a8.bd3rw.mongodb.net/whiteboard?retryWrites=true&w=majority",
+    {useNewUrlParser: true, useUnifiedTopology: true});
 
 
 //for localhost
-mongoose.connect('mongodb://localhost:27017/whiteboard',
-    {useNewUrlParser: true, useUnifiedTopology: true});
+// mongoose.connect('mongodb://localhost:27017/whiteboard',
+//     {useNewUrlParser: true, useUnifiedTopology: true});
 
 app.use(function (req, res, next) {
   res.header('Access-Control-Allow-Origin', '*');
